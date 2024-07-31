@@ -1,4 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,6 +8,6 @@
 </head>
 <body>
     <h1>Athens Uni of Eco and Bus</h1>
-    <p><%= request.getAttribute("message") %></p>
+    <p>${requestScope.message}</p>
 </body>
 </html>

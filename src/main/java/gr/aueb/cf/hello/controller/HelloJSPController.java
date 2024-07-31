@@ -15,6 +15,9 @@ public class HelloJSPController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        request.getRequestDispatcher("/hello.jsp").forward(request, response);
+        String message = "Hello Coding Factory!!!!";
+        request.setAttribute("message", message);
+
+        request.getRequestDispatcher("/helloel.jsp").forward(request, response);
     }
 }
